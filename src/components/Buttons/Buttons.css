@@ -1,0 +1,64 @@
+table {
+    color: white;
+    font-size: 30px;
+    font-family: 'Roboto Mono', monospace;
+    border-spacing: 10px;
+    border-collapse: separate;
+}
+
+td {
+    margin: 10px;
+    width: 75px;
+    height: 75px;
+    text-align: center;
+    border-radius: 500px;
+}
+
+.number {
+    background-color: #333;
+    transition-duration: 0.4s;
+    -webkit-transition-duration: 0.4s;  /* safari */
+}
+
+.number:active {
+    background-color: #666;
+    transition: 0.5s;
+}
+
+.number:active:after {
+    background-color: #333;
+    transition: 0.5s;
+}
+
+.operator {
+    background-color: rgb(250, 134, 1);
+    transition-duration: 0.4s;
+    -webkit-transition-duration: 0.4s;  /* safari */
+}
+
+.operator:active {
+    background-color: #ccc;
+    transition: 0.5s;
+}
+
+.operator:active:after {
+    background-color: rgb(250, 134, 1);
+    transition: 0.5s;
+}
+
+.clearBtns {
+    background-color: grey;
+    transition-duration: 0.4s;
+    -webkit-transition-duration: 0.4s;  /* safari */
+}
+
+.clearBtns:active {
+    background-color: white;
+    color: grey;
+    transition: 0.5s;
+}
+
+.clearBtns:active:after {
+    background-color: grey;
+    transition: 0.5s;
+}

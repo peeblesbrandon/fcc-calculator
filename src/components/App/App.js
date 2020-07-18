@@ -11,19 +11,19 @@ class App extends React.Component {
             operator: '',
             input: 0 
         }
-        this.handleMarkdownChange = this.handleMarkdownChange.bind(this);
+        // this.handleMarkdownChange = this.handleMarkdownChange.bind(this);
     }
 
-    handleMarkdownChange(markdownText) {
-        return this.setState({
-            input: markdownText
-        });
-    }
+    // handleMarkdownChange(markdownText) {
+    //     return this.setState({
+    //         input: markdownText
+    //     });
+    // }
 
     render() {
         return (
-            <div id="calculator" className="">
-                <Display />
+            <div id="calculator" className="d-flex flex-column justify-content-center align-items-center container-fluid">
+                <Display result={this.state.output}/>
                 <Buttons />
             </div>
         );
