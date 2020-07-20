@@ -9,12 +9,14 @@ class Display extends React.Component {
     render() {
         return (
             <table>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td id="display" colSpan="4">{this.props.result}</td>
-                </tr>
+                <tbody>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td id="display" colSpan="4">{String(this.props.displayMsg).replace(/[\n\r]+/g, '')}</td>
+                    </tr>
+                </tbody>
             </table>
         );
     }
